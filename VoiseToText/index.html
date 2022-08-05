@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<html dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>FromVoiseToText </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+ 
+    </head>
+    <body>
+        <div class="container">
+ 
+            <h1  style="font-family:courier;font-size:200%;">تطبيق بسيط للتحويل الصوت الى نص </h1>
+            
+            <div class="app">
+
+                <div class="input-single">
+                    <textarea id="note-textarea" placeholder="بمجرد التحدث سيظهر النص هنا " rows="6"style="color:gray; font-family:courier;font-size:180%;"></textarea>
+                </div>        
+                <button id="start-record-btn" title="Start Recording"style="color:blue;font-family:courier;font-size:100%;background-color:powderblue;">أبدا التسجيل </button>
+                <button id="pause-record-btn" title="Pause Recording" style="color:blue;font-family:courier;font-size:100%;background-color:powderblue;"
+>إيقاف التسجيل </button>
+                <p id="recording-instructions" onclick="onConnectUsb()" style="font-family:courier;font-size:120%;">اضغط على الزر <strong style="color:purple;font-family:courier;font-size:80%;">- أبدا التسجيل - </strong>  للتحدث</p>
+                
+ 
+            </div>
+ 
+        </div>
+ 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="arduino.js"></script>
+        
+ 
+    </body>
+</html>
